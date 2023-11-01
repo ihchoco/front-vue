@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <span >{{ num1 }}</span> 곱하기 <span >{{ num2 }}</span>는?
+        </div>
+        <form v-on:submit="onSubmitForm">
+            <input type="number" v-model="answer" ref="inputNum"/>
+            <button type="submit">입력!</button>
+        </form>
+        <div>
+            {{ isAnswer }}
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
